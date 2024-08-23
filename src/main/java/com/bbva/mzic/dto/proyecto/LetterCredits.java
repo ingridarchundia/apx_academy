@@ -62,6 +62,33 @@ public class LetterCredits implements Serializable  {
 		this.secuence = secuence;
 	}
 
+			/**
+	 * Get the banks attribute
+	 */
+	public String getBanks() {
+		return this.banks;
+	}
+
+	/**
+	 * Set the banks attribute
+	 */
+	public void setBanks(final int secuence) {
+		this.banks = banks;
+	}
+
+			/**
+	 * Get the customer attribute
+	 */
+	public String getCustomer() {
+		return this.customer;
+	}
+
+	/**
+	 * Set the customer attribute
+	 */
+	public void setCustomer(final int secuence) {
+		this.customer = customer;
+	}
 
 
 
@@ -80,6 +107,8 @@ public class LetterCredits implements Serializable  {
 					.append(letter, rhs.letter)
 					.append(reference, rhs.reference)
 					.append(secuence, rhs.secuence)
+					.append(banks, rhs.banks)
+					.append(customer, rhs.customer)
 					.isEquals();
 	}
 
@@ -92,6 +121,8 @@ public class LetterCredits implements Serializable  {
 			.append(this.letter)
 			.append(this.reference)
 			.append(this.secuence)
+			.append(this.banks)
+			.append(this.customer)
 			.toHashCode();
 	}
 
@@ -105,6 +136,8 @@ public class LetterCredits implements Serializable  {
 			.append("letter", letter)
 			.append("reference", reference)
 			.append("secuence", secuence)
+			.append("banks", banks)
+			.append("customer", customer)
 			.toString();
 	}
 }

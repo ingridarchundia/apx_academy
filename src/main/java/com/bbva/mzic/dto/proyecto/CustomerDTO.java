@@ -61,6 +61,19 @@ public class LetterCredits implements Serializable  {
 		this.address = address;
 	}
 
+			/**
+	 * Get the code attribute
+	 */
+	public String getCode() {
+		return this.code;
+	}
+
+	/**
+	 * Set the code attribute
+	 */
+	public void setCode(final List<code>()) {
+		this.code = code;
+	}
 
 
 
@@ -79,6 +92,7 @@ public class LetterCredits implements Serializable  {
 					.append(id, rhs.id)
 					.append(name, rhs.name)
 					.append(address, rhs.address)
+					.append(code, rhs.code)
 					.isEquals();
 	}
 
@@ -91,6 +105,7 @@ public class LetterCredits implements Serializable  {
 			.append(this.id)
 			.append(this.name)
 			.append(this.address)
+			.append(this.code)
 			.toHashCode();
 	}
 
@@ -104,6 +119,7 @@ public class LetterCredits implements Serializable  {
 			.append("id", id)
 			.append("name", name)
 			.append("address", address)
+			.append("code", code)
 			.toString();
 	}
 }
